@@ -517,90 +517,147 @@ footer span a:hover {
 
 /*Small screens, laptops*/
 @media (max-width: 1024px) and (min-width: 769px){
-    .menu-btn{
-        display: none; 
-        z-index: 999;
-    }
+        .menu-btn{
+            display: block; 
+            z-index: 999;
+        }
     
-    .navbar .menu li{
-        padding: 8px 5px;
-    }
+        .navbar .menu{
+            position: fixed;
+            background: black;
+            opacity: 75%;
+            height: 70vh;
+            width: 50%;
+            top: 0;
+            left: none;
+            right: -100%;
+            text-align: center;
+            padding-top: 80px;
+        }
+    
+        .navbar .menu li{
+            display: block;
+            margin: 10px;
+        }
+    
+        .navbar .menu li a{
+            display: inline-block;
+            color: white;
+        }
+    
+        .navbar .menu li:hover{
+            background: gray;
+        }
+    
+        .navbar .logo{
+            text-align: center;
+            width: 100%;
+            font-size: 40px;
+            font-weight: bold;
+            color: red;
+        }
+    
+        .navbar .logo span{
+            color: blue;
+        }
+    
+        .home {
+            background: url(image/mobile-bg.png) no-repeat center; 
+            background-size: 65%;
+        }
+    
+        .home .home-content p{
+            font-size: 20px;
+        }
+        
+        .home .home-content .text-lg{
+            margin-top: 5%;
+            font-weight: bold;
+            font-size: 27px;
+        }
+        
+        .home .home-content img{
+            width: 30%;
+        }
+        
+        .home .home-content a{
+            font-size: 20px;
+        }
+    
+        .webdesign {
+            display: flex;
+            background: url(image/background-1.jpg) no-repeat top;
+            color: black;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .webdesign .title {
+            font-size: 45px;
+        }
+        
+        .webdesign .webdesign-content .left{
+            width: 100%;
+        }
+        
+        .webdesign .webdesign-content .left img {
+            display: flex;
+            height: 400px;
+            width: 400px;
+            margin: 5% auto;
+            box-shadow: 10px 10px 10px black;
+        }
+        
+        .webdesign .webdesign-content .right{
+            font-size: 30px;
+            width: 100%;
+            box-shadow: 10px 10px 10px black;
+        }
+    
+        .services .services-content { 
+            display: block;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .services .services-content .card{ 
+            width: 100%;
+            margin: 10% 0;
+        }
 
-    .navbar p{
-        font-size: 20px;
-    }
+        .services .services-content .text {
+            font-size: 35px;
+        }
+        
+        .services .services-content p {
+            font-size: 25px;
+        }
+        
+        .skills .skills-content .column { 
+            width: 100%;
+        }
+        
+        .skills .skills-content .right{ 
+            padding-top: 10%;
+        }
 
-    .navbar .menu li a{
-        font-size: 15px;
-    }
-
-    .home {
-        background: url(image/mobile-bg.png) no-repeat center; 
-        background-size: 100%;
-    }
-
-    .home .text-lg{
-        padding-top: 20px;
-    }
-
+        .skills .skills-content .left p {
+            font-size: 25px;
+        }
+        
+        .contact .contact-content { 
+            display: block;
+        }
+        
+        .contact .contact-content .column{
+            width: 100%;
+        }
     
-    .webdesign {
-        display: flex;
-        background: url(image/background-1.jpg) no-repeat center;
-        color: black;
-        background-size: cover;
-        background-attachment: fixed;
-        font-family: 'Inter', sans-serif;
-    }
-    
-    .webdesign .title {
-        font-size: 45px;
-    }
-
-    .webdesign .webdesign-content{
-        width: 100%;
-    }
-    
-    .webdesign .webdesign-content img {
-        display: flex;
-        height: 50px;
-        width: 50px;
-        margin: 5% auto;
-        box-shadow: 10px 10px 10px black;
-    }
-    
-
-    .services .services-content { 
-        display: block;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .services .services-content .card{ 
-        width: calc(100% - 20px);
-        margin: 10% 0;
-    }
-    
-    .skills .skills-content .column { 
-        width: calc(100% - 30px);
-    }
-    
-    .skills .skills-content .right{ 
-        padding-top: 10%;
-    }
-    
-    .contact .contact-content { 
-        display: block;
-    }
-    
-    .contact .contact-content .column{
-        width: 100%;
-    }
-
-    .contact .contact-content .left{ 
-        width: 100%;
-    }
+        .contact .contact-content .left{ 
+            width: 100%;
+        }
 }
 
 /*iPads, Tablets*/
@@ -651,7 +708,7 @@ footer span a:hover {
 
     .home {
         background: url(image/mobile-bg.png) no-repeat center; 
-        background-size: 105%;
+        background-size: 10%;
     }
 
     .home .home-content p{
@@ -868,10 +925,3 @@ footer span a:hover {
         width: 100%;
     }
 }
-
-
-
-
-
-
-
