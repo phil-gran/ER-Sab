@@ -476,8 +476,8 @@ footer {
 }
 
 footer i{
-    font-size: 90px;
-    padding: 20px;
+    font-size: 30px;
+    padding: 10px;
     color: white;
 }
 
@@ -684,6 +684,12 @@ footer span a:hover {
         .contact .contact-content .left{ 
             width: 100%;
         }
+ 
+       footer i{
+          font-size: 30px;
+          padding: 10px;
+          color: white;
+      }
 }
 
 /*iPads, Tablets*/
