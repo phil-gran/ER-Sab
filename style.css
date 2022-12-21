@@ -521,12 +521,17 @@ footer span a:hover {
             display: block; 
             z-index: 999;
         }
+
+        .menu-btn img{
+            width: 40px;
+            color: black;
+        }
     
         .navbar .menu{
             position: fixed;
             background: black;
-            opacity: 75%;
-            height: 70vh;
+            opacity: 85%;
+            height: fit-content;
             width: 50%;
             top: 0;
             left: none;
@@ -552,7 +557,7 @@ footer span a:hover {
         .navbar .logo{
             text-align: center;
             width: 100%;
-            font-size: 40px;
+            font-size: 50px;
             font-weight: bold;
             color: red;
         }
@@ -562,26 +567,27 @@ footer span a:hover {
         }
     
         .home {
-            background: url(image/mobile-bg.png) no-repeat center; 
-            background-size: 65%;
+            background: url(image/mobile-bg-hor.png) no-repeat center; 
+            background-size: 115%;
         }
     
         .home .home-content p{
-            font-size: 20px;
+            font-size: 30px;
+            margin-bottom: 10px;
         }
         
         .home .home-content .text-lg{
-            margin-top: 5%;
+            margin-top: 15%;
             font-weight: bold;
-            font-size: 27px;
+            font-size: 40px;
         }
         
         .home .home-content img{
-            width: 30%;
+            display: none;
         }
         
         .home .home-content a{
-            font-size: 20px;
+            font-size: 30px;
         }
     
         .webdesign {
@@ -608,9 +614,12 @@ footer span a:hover {
             margin: 5% auto;
             box-shadow: 10px 10px 10px black;
         }
+
+        .webdesign .webdesign-content .right p{
+            font-size: 30px;
+        }
         
         .webdesign .webdesign-content .right{
-            font-size: 30px;
             width: 100%;
             box-shadow: 10px 10px 10px black;
         }
@@ -643,12 +652,29 @@ footer span a:hover {
             padding-top: 10%;
         }
 
+        .skills .skills-content .right .text{ 
+            padding-top: 30%;
+        }
+
         .skills .skills-content .left p {
             font-size: 25px;
         }
         
         .contact .contact-content { 
             display: block;
+        }
+
+        .contact .contact-content .icons .head{ 
+            font-size: 25px;
+        }
+
+        .contact .contact-content .icons .sub-title{ 
+            font-size: 25px;
+        }
+
+        .contact .contact-content .icons img{ 
+            width: 40px;
+            height: 40px;
         }
         
         .contact .contact-content .column{
