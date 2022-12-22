@@ -522,15 +522,14 @@ footer span a:hover {
             z-index: 999;
         }
 
-        .menu-btn img{
-            width: 40px;
-            color: black;
+        .menu-btn i{
+            color: gray;
+            font-size: 50px;
         }
     
         .navbar .menu{
             position: fixed;
             background: black;
-            opacity: 85%;
             height: fit-content;
             width: 50%;
             top: 0;
@@ -547,11 +546,12 @@ footer span a:hover {
     
         .navbar .menu li a{
             display: inline-block;
-            color: white;
+            color: gray;
+            font-size: 50px;
         }
     
         .navbar .menu li:hover{
-            background: gray;
+            background: white;
         }
     
         .navbar .logo{
